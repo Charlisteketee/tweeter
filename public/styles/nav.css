@@ -1,0 +1,33 @@
+/* Styling the <nav> */
+
+nav {
+  height: 120px;
+  width: 100%;
+  background-color: #4056a1;
+  color: #FFFFFF;
+  padding: 1.5em;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: space-between; /* Creates space between 'tweeter' and 'write a new tweet' */
+  align-items: center;
+  position: fixed;
+}
+
+/* Styling the tweeter <span> element within <nav> */
+nav span {
+  font-family: 'Bungee', sans-serif;
+}
+
+/* Styling the write new tweet <div> element within <nav> */
+.write-tweet {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+/* Styling the double down arrow icon */
+.icon {
+  margin-top: 10px;
+  color: red;
+}
