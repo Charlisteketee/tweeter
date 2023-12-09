@@ -1,0 +1,22 @@
+header {
+  height: 600px;
+  width: 100%;
+  background-color: lightcoral;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+  background-image: url("https://www.transparenttextures.com/patterns/asfalt-dark.png"); /* Add the texture */
+}
+
+header img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+header h2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

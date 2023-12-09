@@ -16,12 +16,23 @@ html {
 
 body {
   color: #545149;
-  background-color: #f4f1ec;
+  background-color: #cf9ecc;
   font-size: 24px;
   font-family: 'Source Sans 3', sans-serif;
 }
 
-nav span {
+main.container {
+  margin: 0 5%;
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+  color: #545149;
+  background-color: inherit;
+  
+}
+
+
+output.counter {
   font-family: 'Bungee', sans-serif;
 }
 
