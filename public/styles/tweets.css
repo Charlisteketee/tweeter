@@ -1,0 +1,47 @@
+article.tweet {
+  border: 3px solid #545149;
+  margin-bottom: 10 px;
+  margin-top: 10px;
+  padding: 10px;
+}
+
+
+p.handle {
+  color: #8d8080;
+  margin-left: auto;
+}
+
+div.user-info {
+  display: flex;
+  align-items: center;
+  
+}
+
+div.content {
+  border-bottom: 3px solid #545149
+}
+
+article.tweet:hover {
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+footer {
+  display: flex;
+  align-content: center;
+  justify-content: flex-end;
+}
+
+p.timestamp {
+  font-size: small;
+  margin-right: auto;
+}
+
+footer i {
+  color: darkblue;
+  justify-content: flex-end;
+}
+
+
+article.tweet:hover footer i:hover {
+  color: yellow;
+}

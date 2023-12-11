@@ -27,8 +27,8 @@ main.container {
   display: flex;
   flex-direction: column;
   color: #545149;
-  background-color: inherit;
-  
+  /* justify-content: space-between; */
+  /* background-color: inherit; */
 }
 
 
