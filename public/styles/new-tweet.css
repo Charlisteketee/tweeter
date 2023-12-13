@@ -17,7 +17,7 @@ div.button-container {
 
 /* Style the textarea for the tweet form */
 textarea#tweet-text {
-  background-color: #cf9ecc; /* Set background color to match the page background */
+  background-color: inherit; /* Set background color to match the page background */
   border: none;
   border-bottom: 3px solid #545149; /* Dark grey border line */
   padding-bottom: 10px; /* Add some space between the label and the border */
