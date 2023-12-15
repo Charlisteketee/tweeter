@@ -30,7 +30,7 @@ const createTweetElement = function(tweet) {
         </div>
       </header>
       <div class="content">
-        <p>${tweet.content.text}</p>
+        <p></p> <!-- placeholder for safe tweet content -->
       </div>
       <footer>
         <p class="timestamp">${timeago.format(tweet.created_at)}</p>
@@ -40,6 +40,10 @@ const createTweetElement = function(tweet) {
       </footer>
     </article>  
   `);
+
+  // prevent XSS - target the empty <p> content element and apply the .text method (ensures user-generated content is treated as plain text)
+  $tweet.find('.content p').text(tweet.content.text);
+  
   return $tweet;
 }
 
@@ -94,7 +98,7 @@ const createTweetElement = function(tweet) {
         // clear the input field
         $('#tweet-text').val('');
 
-        // make a GET request to retrieve all food items without having to refresh
+        // make a GET request to retrieve all texts without having to refresh
         loadTweets();
       }
     })
