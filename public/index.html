@@ -34,7 +34,7 @@
 
   <body>
     <!-- Top nav bar (fixed) -->
-    <nav>
+    <nav class="nav-banner">
       <span>tweeter</span>
       <div class="write-tweet">Write a new tweet
         <span class="icon"><i class="fas fa-angle-double-down"></i></span>
@@ -57,6 +57,10 @@
         <h2>Compose Tweet</h2>
         <form id="tweet-form" action="/tweets/" method="POST">
           <label for="tweet-text">What are you humming about?</label>
+          <div id="error-message" style="display: none;">
+            <i class="fas fa-exclamation-circle"></i>
+            <span id="error-text"></span>
+          </div>
           <textarea name="text" id="tweet-text"></textarea>
           <div class="button-container">
             <button type="submit">Tweet</button>

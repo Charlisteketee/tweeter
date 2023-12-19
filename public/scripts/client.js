@@ -65,6 +65,9 @@ const createTweetElement = function(tweet) {
 
   // grab the form
   const $form = $('#tweet-form');
+  const $errorMessage = $('#error-message')
+  const $errorText = $('#error-text');
+
 
   // handler function:
   // listener for the submit event
@@ -73,18 +76,25 @@ const createTweetElement = function(tweet) {
     event.preventDefault();
 
     // validation checks:
-    // If there's nothing in the form
     const tweetContent = $('#tweet-text').val();
+
+    // If there's nothing in the form
     if (!tweetContent) {
-      alert('Error: Tweet content is empty!');
+      $errorText.text('Tweet content is empty!');
+      $errorMessage.slideDown();
       return;
     }
 
     // if there's more than the maximum character count
     if (tweetContent.length > 140) {
-      alert("Error: Tweet content exceeds the maximum character count of 140!");
+      $errorText.text('Tweet content exceeds the maximum character count of 140!');
+      $errorMessage.slideDown();
       return;
     }
+
+    // if there aren't any errors, hide the error messages
+    $errorMessage.slideUp();
+
 
     // grab the data from the form and serialize
     const formData = $form.serialize(); //serialize() method turns a set of form data into a query string

@@ -21,14 +21,10 @@ body {
   font-family: 'Source Sans 3', sans-serif;
 }
 
-main.container {
+main {
   margin: 0 5%;
   width: 90%;
-  display: flex;
-  flex-direction: column;
   color: #545149;
-  /* justify-content: space-between; */
-  /* background-color: inherit; */
 }
 
 
@@ -39,3 +35,56 @@ output.counter {
 /*
  * Additional CSS can be defined below or in other CSS files, as per instructions
  */
+
+ 
+ /* Tablet Styles */
+@media only screen and (max-width: 1023px) {
+
+  nav.nav-banner {
+    background-image: url("https://www.transparenttextures.com/patterns/asfalt-dark.png"); /* Add the texture */
+    background-color: rgb(128, 186, 240);
+    position: inherit;
+  }
+
+  header.main-header {
+    height: 400px;
+    justify-content: center;
+    padding-bottom: 50px;
+  }
+
+
+}
+
+/* Desktop styles */
+@media only screen and (min-width: 1024px) {
+  header.main-header {
+    height: 400px;
+    width: 40%;
+    margin-left: 15px;
+    margin-top: 200px;
+    justify-content: center;
+  }
+  
+  nav.nav-banner {
+    background-position-x: 0%;
+    position: fixed;
+  }
+
+  main.container {
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: column;
+    margin-top: 200px;
+  }
+
+  body {
+    display: flex;
+    flex-direction: row;
+  }
+
+  }
+
+
+
+
+

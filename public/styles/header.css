@@ -4,19 +4,16 @@
   background-color: rgb(128, 186, 240);
   display: flex;
   flex-direction: column;
-  justify-content: flex-end;
   align-items: center;
+  align-content: center;
   background-image: url("https://www.transparenttextures.com/patterns/asfalt-dark.png"); /* Add the texture */
 }
 
 header img {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  margin-top: 100px;
 }
 
 header h2 {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+
+  margin-top: 0px;
 }

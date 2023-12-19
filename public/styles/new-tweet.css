@@ -32,3 +32,13 @@ button {
   padding: 5px 10px; /* Adjust padding as needed */
   cursor: pointer; /* Change cursor on hover */
 }
+
+div#error-message {
+  color: red;
+  border: 2px solid red;
+  padding: 10px;
+}
+
+div#error-message i {
+  justify-content: flex-start;
+}

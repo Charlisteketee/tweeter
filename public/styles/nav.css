@@ -1,5 +1,6 @@
 /* Styling the <nav> */
 
+
 nav {
   height: 120px;
   width: 100%;
@@ -10,7 +11,6 @@ nav {
   display: flex;
   justify-content: space-between; /* Creates space between 'tweeter' and 'write a new tweet' */
   align-items: center;
-  position: fixed;
 }
 
 /* Styling the tweeter <span> element within <nav> */
