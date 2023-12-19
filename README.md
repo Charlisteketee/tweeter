@@ -2,9 +2,11 @@
 
 Tweeter is a simple, single-page Twitter clone.
 
+!["Tweeter Screenshot"](/public/images/tweeter.png)
+
 Write a tweet and see what username and avatar are generated! How fun!
 
-!["Tweeter Screenshot"](/public/images/tweeter.png)
+!["Tweet Screenshot"](/public/images/tweet.png)
 
 ## Getting Started
 
