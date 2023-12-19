@@ -4,6 +4,8 @@ Tweeter is a simple, single-page Twitter clone.
 
 Write a tweet and see what username and avatar are generated! How fun!
 
+!["Tweeter Screenshot"](/public/images/tweeter.png)
+
 ## Getting Started
 
 1. [Create](https://docs.github.com/en/repositories/creating-and-managing-repositories/creating-a-repository-from-a-template) a new repository using this repository as a template.
